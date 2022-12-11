@@ -7,7 +7,7 @@ print("_______________________\n")
 print("Welcome To Dice Game 🎲")
 print("_______________________\n")
 while True:
-  a=input(">>> Enter Your Guess:  ")
+  a=input("Enter Your Guessed Number:  ")
   if a.lower()=='quit':
     if score==0:
       a1="times!"
@@ -17,7 +17,7 @@ while True:
       a1="times!"
     else:
       a1="times!"
-    print("\nThanks for playing the game. You won",score, a1 )
+    print("\nThanks for playing the game. You won the game.",score, a1 )
     exit()
   def dice_game(user_guess,loses,score):
     if user_guess>6:
@@ -27,7 +27,7 @@ while True:
       dice_value=random.randint(1,6)
       print("🎲"+ "="+str(dice_value))
       if user_guess==dice_value:
-        print("Congratulations You won!!!\n")
+        print("Congratulations...You won !!!\n")
         score+=1
       else:
         if loses>0:
